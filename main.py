@@ -57,7 +57,7 @@ def main():
 
     while running:
         for event in pygame.event.get():  # processes events (clicks, window close, etc.)
-            # manage exiting game
+            # handle exiting game
             if event.type == pygame.QUIT:
                 running = False
             # handle exit button
@@ -86,6 +86,7 @@ def main():
         clock.tick(60)
 
     pygame.quit()
-
-if __name__ == "__main__":  # call main to start the main method
+    
+# call main to start the main method
+if __name__ == "__main__":  
     main()
